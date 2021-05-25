@@ -1,0 +1,168 @@
+.fade-in , body{ 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+
+body{
+    background-color: #f0f8ff;
+    font-family: 'Oswald';
+}
+.bg-img{
+    background: url(imgs/cover-img.jpg) center top !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+.input-group{
+    padding: 12% 30%;
+}
+
+.search-btn{
+    background-color:  rgb(203, 32, 45);
+    font-variant: small-caps;
+    letter-spacing: 0.8px;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    font-weight: normal;
+    transition: 0.5s;
+    z-index: 999;
+}
+.search-btn:hover {
+    background-color:  rgba(255, 0, 21);
+    color: rgb(0, 0, 0);
+    /* font-size: 120%; */
+    letter-spacing: 2px;
+}
+
+.data{
+    font-size: 110%;
+    padding: 3%;
+    letter-spacing: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+.data-container{
+    background-color:#dcdcdc;
+    margin: 5% 15%;
+    transition-duration: 0.8s;
+}
+
+.data-container:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+  
+.data-description{
+    font-family: "Oswald";
+    color: #fff;
+    font-size: 200%;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    background-color:  rgb(203, 32, 45);
+}
+/* .geolocation-container{
+    padding-top : 4%
+} */
+.geo-header p{
+    font-size: 50px;
+}
+
+.data-row{
+    background-color: rgba(255, 255, 255, 0.911);
+}
+.restaurant-container{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) ;
+    background-color: rgb(201, 201, 201);
+    margin: 3%;
+    font-variant: small-caps;
+    border-radius: 10px;
+}
+
+.restaurant-container img{
+    width: 100%;;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+.restaurant-data{
+    margin-bottom: 3%;
+}
+.restaurant-name{
+    background-color:gainsboro;
+    color:  rgb(203, 32, 45);
+    font-variant: small-caps;
+    font-size: 130%;
+    padding: 0.5%;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+.restaurant-content{
+    padding: 3%;
+    text-align: center;
+}
+
+.restaurant-name p{
+    color: rgb(0, 0, 0);
+    font-size: 50%;
+}
+
+
+.order-now{
+    margin: 0px;
+    padding: 0px;
+}
+
+.order-btn{
+    background-color:  rgb(203, 32, 45);
+    font-variant: small-caps;
+    letter-spacing: 0.8px;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-weight: normal;
+    transition: 0.5s;
+}
+.order-btn:hover {
+    color: rgb(0, 0, 0);
+    letter-spacing: 6px;
+    background-color:rgba(255, 0, 21);
+}
+
+.restaurant-card{
+    height: 100;
+}
+
+@media(max-width:600px){
+    .input-group{
+        padding: 12% 2%;
+    }
+    
+    .search-btn{
+        background-color:  rgb(203, 32, 45);
+        font-variant: small-caps;
+        letter-spacing: 0.2px;
+        color: rgb(255, 255, 255);
+        font-size: 80%;
+        transition: 0.5s;
+        z-index: 999;
+    }
+    .search-btn:hover {
+        background-color:  rgba(255, 0, 21);
+        color: rgb(0, 0, 0);
+        letter-spacing: 0.6px;
+    }
+}
